@@ -2,7 +2,7 @@
 
 # 🐼 WCH-SciHelper (华西科研助手)
 
-**一款纯净的、为华西科研人准备的医学浏览器插件**  
+**一款纯净的、为华西科研人准备的医学浏览器插件，包含华西分区**  
 *A clean, clutter-free medical browser extension tailored for West China researchers.*
 
 [![Status](https://img.shields.io/badge/Status-Active_Upgrading-brightgreen.svg)]()
