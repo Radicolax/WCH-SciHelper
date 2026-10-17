@@ -1,0 +1,13 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><title>HX-Pure 设置</title><link rel="stylesheet" href="ui.css"></head>
+<body class="settings">
+<header><img src="assets/icon-48.png" width="44" height="44" alt=""><div><h1>HX-Pure 设置</h1><span class="muted">IF/JCR 数据与 Zotero 保存</span></div></header>
+<section class="settings-card"><h2>内置 IF 与 JCR 分区</h2><div class="legend" aria-label="JCR 分区颜色"><span class="q1">Q1 红色</span><span class="q2">Q2 黄色</span><span class="q3">Q3 绿色</span><span class="q4">Q4 灰色</span></div>
+<p id="builtin-status">正在加载内置数据…</p><p>安装后即显示 IF 数值和 JCR 分区，无需手动导入。数据来源为 <a href="https://github.com/hitfyd/ShowJCR" target="_blank" rel="noopener noreferrer">ShowJCR 社区整理数据</a>，源文件标注的指标年份为 2025。期刊详情中保留年份与来源，未提供分区的期刊会明确显示“未分区”。</p>
+</section><section class="settings-card"><h2>自定义数据（可选）</h2>
+<p>可另行导入你有权使用的 CSV 或 JSON 数据。数据保存在本机，不会上传。IF 和分区标签会显示在论文详情和 PubMed 搜索结果中。</p><p>同一期刊每个学科一行，保留 JCR 年份。存在多个年份时，使用最新年份；同一年份优先采用自定义数据，并显示最佳学科分区，详情保留全部匹配学科。</p>
+<p>CSV 字段：<code>journal,issn,eissn,jif,jcr_quartile,jcr_year,category</code></p><pre>journal,issn,eissn,jif,jcr_quartile,jcr_year,category
+Example Journal,1234-5678,8765-4321,8.2,Q1,2025,Medicine</pre>
+<p class="muted small">上面的记录仅展示文件格式。JSON 可使用记录数组或包含 records 数组的对象。ISSN 支持带连字符或连续 8 位格式。</p><input id="file" type="file" accept=".csv,.json,application/json,text/csv"><br><button id="clear" class="danger">清除自定义数据，保留内置数据</button><p id="status" role="status" aria-live="polite"></p></section>
+<section class="settings-card"><h2>一键保存到 Zotero</h2><ol><li>启动本机 Zotero 桌面端，选中要保存的文献库或分类。</li><li>在 Chrome 中打开单篇论文详情页。</li><li>点击 HX-Pure 工具栏图标，再点击“一键保存到 Zotero”。</li></ol><p>保存文献题录和匹配到的 SCU、HX-2025、JCR 标签。普通网页按网页条目保存；搜索结果页请先进入单篇详情。</p><p class="muted small">连接仅发送到本机 127.0.0.1:23119；有 DOI 时使用 Crossref 补全题录。此功能不自动下载全文 PDF，也不执行 Zotero Connector 的站点翻译器。</p></section>
+<script src="shared.js"></script><script src="options.js"></script></body></html>

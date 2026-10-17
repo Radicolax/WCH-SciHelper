@@ -1,0 +1,12 @@
+<!doctype html>
+<html lang="zh-CN">
+<head><meta charset="utf-8"><title>HX-Pure</title><link rel="stylesheet" href="ui.css"></head>
+<body class="popup">
+  <header><img src="assets/icon-48.png" width="40" height="40" alt=""><div><h1>HX-Pure</h1><span class="muted">期刊分级与文献保存</span></div></header>
+  <section class="paper-card"><span class="eyebrow">当前页面</span><p id="paper-title">正在识别文献信息…</p><p id="paper-type" class="muted"></p></section>
+  <button id="save-zotero" class="primary" disabled>一键保存到 Zotero</button>
+  <p id="save-status" role="status" aria-live="polite">正在检查 Zotero 连接…</p>
+  <p class="muted small">保存题录及匹配的分级标签到 Zotero 当前选中的文献库或分类。使用前请启动桌面端。</p>
+  <section class="jcr-section"><div class="legend" aria-label="JCR 分区颜色"><span class="q1">Q1</span><span class="q2">Q2</span><span class="q3">Q3</span><span class="q4">Q4</span></div><p id="jcr" class="muted small">正在加载内置 IF/JCR 数据…</p><button id="options" class="secondary">IF/JCR 数据与设置</button></section>
+  <script src="popup.js"></script>
+</body></html>

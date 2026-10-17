@@ -1,0 +1,21 @@
+#scu-hx-journal-inline{all:initial;display:block;margin:7px 0 10px;font-family:system-ui,sans-serif}
+#scu-hx-journal-badge{all:initial;display:inline-flex;flex-wrap:wrap;gap:5px;align-items:center;padding:0;border:0;background:transparent;cursor:pointer;font:600 12px/1.2 system-ui,sans-serif}
+#scu-hx-journal-inline .jrank-chip{display:inline-block;padding:4px 8px;border:1px solid #cbd5e1;border-radius:6px;background:#f8fafc;color:#334155;white-space:nowrap;font:600 12px/1.2 system-ui,sans-serif}
+#scu-hx-journal-badge .jrank-best{border-color:#185adb;background:#185adb;color:#fff}
+#scu-hx-journal-inline .jrank-if,.jrank-result-badges .jrank-if{border-color:#c4b5fd;background:#f5f3ff;color:#5b21b6}
+#scu-hx-journal-panel{all:initial;display:none;position:relative;z-index:20;width:min(560px,100%);box-sizing:border-box;margin-top:8px;padding:16px;border:1px solid #c8d2e0;border-radius:12px;background:#fff;color:#172033;box-shadow:0 10px 30px #17203320;font:14px/1.45 system-ui,sans-serif}
+#scu-hx-journal-panel.open{display:block}
+#scu-hx-journal-panel h2{margin:0 30px 15px 0;font-size:18px;line-height:1.3}
+#scu-hx-journal-panel .jrank-close{position:absolute;right:12px;top:8px;border:0;background:none;font-size:26px;cursor:pointer;color:#667085}
+#scu-hx-journal-panel .jrank-grid{display:grid;grid-template-columns:120px 1fr;gap:9px 12px}
+#scu-hx-journal-panel strong{color:#185adb}
+#scu-hx-journal-panel .jrank-note{margin:15px 0 0;color:#667085;font-size:12px}
+#scu-hx-journal-panel details{margin-top:14px}
+.jrank-result-badges{display:inline-flex!important;flex-wrap:wrap;gap:4px;align-items:center;margin:3px 0 3px 8px;vertical-align:middle;font:600 11px/1.2 system-ui,sans-serif}
+.jrank-result-badges .jrank-mini{display:inline-block;padding:3px 6px;border:1px solid #cbd5e1;border-radius:5px;background:#f8fafc;color:#334155;white-space:nowrap}
+.jrank-result-badges .jrank-mini-best{border-color:#185adb;background:#185adb;color:#fff}
+#scu-hx-journal-inline .jrank-q1,.jrank-result-badges .jrank-q1{border-color:#fda29b;background:#fef3f2;color:#b42318}
+#scu-hx-journal-inline .jrank-q2,.jrank-result-badges .jrank-q2{border-color:#e8bd37;background:#fef9c3;color:#854d0e}
+#scu-hx-journal-inline .jrank-q3,.jrank-result-badges .jrank-q3{border-color:#86c99a;background:#f0fdf4;color:#166534}
+#scu-hx-journal-inline .jrank-q4,.jrank-result-badges .jrank-q4{border-color:#b7beca;background:#f2f4f7;color:#475467}
+#scu-hx-journal-inline .jrank-unknown,.jrank-result-badges .jrank-unknown{border-style:dashed;color:#667085;background:#fff}

@@ -1,0 +1,35 @@
+{
+   "action": {
+      "default_icon": {
+         "16": "assets/icon-16.png",
+         "32": "assets/icon-32.png"
+      },
+      "default_popup": "popup.html",
+      "default_title": "HX-Pure"
+   },
+   "background": {
+      "service_worker": "background.js"
+   },
+   "content_scripts": [ {
+      "css": [ "content.css" ],
+      "js": [ "shared.js", "content.js" ],
+      "matches": [ "http://*/*", "https://*/*" ],
+      "run_at": "document_idle"
+   } ],
+   "description": "内置期刊 IF 与彩色 JCR 分区标签，显示 SCU、HX-2025 等级，一键保存当前文献到本机 Zotero。",
+   "host_permissions": [ "https://api.crossref.org/*", "http://127.0.0.1:23119/*" ],
+   "icons": {
+      "128": "assets/icon-128.png",
+      "16": "assets/icon-16.png",
+      "32": "assets/icon-32.png",
+      "48": "assets/icon-48.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA0Q/Vf1stcfWhY+FmxHajTnVSFeU9jYG5AlbOq2aJJWEcUs0cK0612aA+qF/W9F9K8IqSoNP6imrHyO/F0tjGVn7QcLu1Urcbrru2ZejZONIbt45eCtbZ+WzGAVN51v4TQYH/DS2gPTzAAOxG5pO6gBnHCEC7IR5CAGuV1KkY4OKtmGvpWTJLsrNxB7oz354SsmhDZjJ9vp3D3SDHRMSwZGuKtBT0WnKVW7LMVFJPbhMHtlLZUTX6HXZGMQKO/C+L4U3TVHQXctnedwxV3uy1KY4c6Sh3FnJ/YlG/oQKf9XYNXFoaKS06Vp3HqBOreo0UjXf7OTBa+VtyW9pJ9WmsMwIDAQAB",
+   "manifest_version": 3,
+   "name": "HX-Pure",
+   "options_page": "options.html",
+   "permissions": [ "storage", "unlimitedStorage", "activeTab", "scripting" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "1.2",
+   "version_name": "v1.2"
+}
