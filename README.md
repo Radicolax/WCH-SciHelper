@@ -41,9 +41,6 @@
 ## 🙏 致谢与声明
 
 本插件由多个优秀的现有开源科研插件整合改进而来，在此对原项目作者们的开源精神与杰出工作表示诚挚感谢！
-- *[原插件名称 1]* - 提供了基础架构参考
-- *[原插件名称 2]* - 提供了数据解析思路
-
 ---
 
 ## 🌐 Introduction
@@ -72,8 +69,6 @@ We aim to strip away unnecessary bloatware and provide a streamlined literature 
 ## 🤝 Acknowledgments
 
 This project builds upon and improves existing open-source extensions. Special thanks to the original authors for their inspiring work:
-- *[Original Extension 1]*
-- *[Original Extension 2]*
 
 ## 📄 License
 
